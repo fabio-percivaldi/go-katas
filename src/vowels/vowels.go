@@ -1,4 +1,4 @@
-package main
+package vowels
 
 var vowels = map[rune]bool{
 	'a': true,
@@ -15,8 +15,4 @@ func GetCount(str string) (count int) {
 		}
 	}
 	return
-}
-
-func main() {
-
 }
