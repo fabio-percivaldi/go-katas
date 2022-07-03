@@ -1,8 +1,16 @@
 package main
 
+var vowels = map[rune]bool{
+	'a': true,
+	'e': true,
+	'i': true,
+	'o': true,
+	'u': true,
+}
+
 func GetCount(str string) (count int) {
 	for _, char := range str {
-		if char == 'a' {
+		if vowels[char] {
 			count++
 		}
 	}
